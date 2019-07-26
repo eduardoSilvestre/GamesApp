@@ -1,5 +1,7 @@
 package br.com.digitalhouse.gamesapp.model;
 
+import android.widget.ImageView;
+
 import java.util.List;
 
 public class GameResponse {
@@ -7,6 +9,16 @@ public class GameResponse {
     private String error;
 
     private List<Game> results;
+
+    private GameImage image;
+
+    public GameImage getImage() {
+        return image;
+    }
+
+    public void setImage(GameImage image) {
+        this.image = image;
+    }
 
     public String getError() {
         return error;

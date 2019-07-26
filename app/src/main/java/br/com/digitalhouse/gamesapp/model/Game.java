@@ -1,5 +1,7 @@
 package br.com.digitalhouse.gamesapp.model;
 
+import android.widget.ImageView;
+
 import com.google.gson.annotations.SerializedName;
 
 public class Game {
@@ -8,6 +10,18 @@ public class Game {
 
     @SerializedName("deck")
     private String descricao;
+
+    @SerializedName("image")
+    private GameImage imagemGame;
+
+
+    public GameImage getImagemGame() {
+        return imagemGame;
+    }
+
+    public void setImagemGame(GameImage imagemGame) {
+        this.imagemGame = imagemGame;
+    }
 
     public String getTitulo() {
         return titulo;
